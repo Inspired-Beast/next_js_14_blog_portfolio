@@ -68,7 +68,7 @@ export default function Dashboard(){
             <div className={styles.container}>
                 <div className={styles.posts}>
                 {isLoading ?"Loading":data.map((post)=>
-                  <div className={styles.post}>
+                  <div className={styles.post} key={post._id}>
                     <div className={styles.imgContainer}>
                         <Image src={post.img} alt="post image" width={200} height={100}/>
                     </div>
